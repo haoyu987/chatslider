@@ -108,8 +108,6 @@ spa.chat = (function () {
 			? configMap.slider_opened_em
 			: configMap.slider_opened_min_em;
 		
-		opened_height_em = configMap.slider_opened_em;
-		
 		stateMap.px_per_em = px_per_em;
 		stateMap.slider_closed_px = configMap.slider_closed_em * px_per_em;
 		stateMap.slider_opened_px = opened_height_em * px_per_em;
