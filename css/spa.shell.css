@@ -14,32 +14,47 @@
 	top		: 0;
 	left	: 0;
 	right	: 0;
-	height	: 40px;
+	height	: 60px;
 }
 .spa-shell-head-logo {
 	top		: 4px;
-	left	: 4px;
-	height	: 32px;
+	left	: 8px;
+	height	: 50px;
 	width	: 128px;
-	background	: orange;
 }
+	.spa-shell-head-logo h1 {
+		font	: 800 22px/22px Arial, Helvetica, sans-serif;
+		margin	: 0;
+	}
+	.spa-shell-head-logo p {
+		font	: 800 10px/10px Arial, Helvetica, sans-serif;
+		margin	: 0;
+	}
+
 .spa-shell-head-acct {
-	top		: 4px;
-	right	: 0;
-	height	: 32px;
-	width	: 64px;
-	background	: green;
-}
-.spa-shell-head-search {
-	top		: 4px;
-	right	: 64px;
-	height	: 32px;
-	width	: 248px;
-	background	: blue;
+	top			: 4px;
+	right		: 0;
+	height		: 50px;
+	width		: 210px;
+	line-height	: 32px;
+	background	: #888;
+	color		: #fff;
+	text-align	: center;
+	cursor		: pointer;
+	overflow	: hidden;
+	text-overflow : ellipsis;
 }
 
+/* .spa-shell-head-search { */
+	/* top		: 4px; */
+	/* right	: 64px; */
+	/* height	: 32px; */
+	/* width	: 248px; */
+	/* background	: blue; */
+/* } */
+
 .spa-shell-main {
-	top		: 40px;
+	top		: 60px;
 	left	: 0;
 	bottom	: 40px;
 	right	: 0;
@@ -50,15 +65,16 @@
 	bottom	: 0;
 }
 .spa-shell-main-nav {
-	width	: 250px;
+	width	: 400px;
 	background	: #eee;
+	z-index		: 1;
 }
 	.spa-x-closed .spa-shell-main-nav {
 		width	: 0;
 	}
 
 .spa-shell-main-content {
-	left	: 250px;
+	left	: 400px;
 	right	: 0;
 	background	: #ddd;
 }
@@ -72,19 +88,7 @@
 	right	: 0;
 	height	: 40px;
 }
-.spa-shell-chat {
-	bottom	: 0;
-	right	: 0;
-	width	: 300px;
-	height	: 15px;
-	cursor	: pointer;
-	background	: red;
-	border-radius	: 5px 0 0 0;
-	z-index	: 1;
-}
-	.spa-shell-chat:hover {
-		background	: #a00;
-	}
+
 .spa-shell-modal {
 	margin-top	: -200px;
 	margin-left	: -200px;
@@ -95,4 +99,5 @@
 	background	: #fff;
 	border-radius	: 3px;
 	z-index		: 2;
+	display		: none;
 }
