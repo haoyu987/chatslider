@@ -51,7 +51,7 @@ spa.util_b = (function () {
 		}
 		else {
 			lookup_map	= configMap.html_encode_map;
-			regext		= configMap.regex_encode_html;
+			regex		= configMap.regex_encode_html;
 		}
 		
 		return input_str.replace(regex,
